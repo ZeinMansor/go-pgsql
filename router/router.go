@@ -16,4 +16,5 @@ func Router () *mux.Router 	{
   router.HandleFunc("/api/stock/{od}", middleware.UpdateStock).Methods("PUT", "OPTIONS")
   router.HandleFunc("/api/delete-stock/{id}", middleware.DeleteStock).Methods("DELETE", "OPTIONS")
 
+  return router
 }
